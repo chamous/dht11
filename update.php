@@ -31,7 +31,7 @@ $id=$_GET['id'];
 <html lang="en">
 
 <head>
-    <title>Gradient Able bootstrap admin template by codedthemes </title>
+    <title>Sensor data manager by Heptatronics </title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -126,8 +126,8 @@ $id=$_GET['id'];
                        <ul class="nav-right">
                            <li class="user-profile header-notification">
                                <a href="#!">
-                                   <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                   <span>John Doe</span>
+                                   <img src="image/admin.png" class="img-radius" alt="User-Profile-Image">
+                                   <span>admin</span>
                                    <i class="ti-angle-down"></i>
                                </a>
                                <ul class="show-notification profile-notification">
@@ -165,22 +165,8 @@ $id=$_GET['id'];
                                     
                                 </li>
                             </ul>
-                            <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Image &amp; ManageMent</div>
+                            <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Sensors ManageMent</div>
                             <ul class="pcoded-item pcoded-left-item">
-                                <li>
-                                    <a href="index.php">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Create Project Category</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="insertproject_details.php">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Insert Project Details</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
 
                             </ul>
 
@@ -193,11 +179,11 @@ $id=$_GET['id'];
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="manageproject_detail.php">
+                                    <a href="index.php">
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">
 
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Manage Project Details </span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Sensors Page</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -272,59 +258,7 @@ $id=$_GET['id'];
                                </div>
                             </div> 
                           </div>       
-                                            <!-- tabs card end -->
-
-                                            <!-- social statustic start -->
-                                           
-                                          
-                                            <!-- users visite and profile start -->
-                                          
-                                         
-
-        <!-- Warning Section Starts -->
-        <!-- Older IE warning message -->
-    <!--[if lt IE 9]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
-</div>
-<![endif]-->
-<!-- Warning Section Ends -->
+ 
 <!-- Required Jquery -->
 <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js"></script>

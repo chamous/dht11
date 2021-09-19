@@ -49,17 +49,17 @@ INSERT INTO `admin` (`id`, `username`, `password`) VALUES
 
 CREATE TABLE `category` (
   `id` int(11) NOT NULL,
-  `categoryName` varchar(255) DEFAULT NULL,
-  `categoryDescription` varchar(255) DEFAULT NULL,
-  `creationDate` timestamp NULL DEFAULT NULL,
-  `updationDate` timestamp NULL DEFAULT NULL
+  `Sensor Name` varchar(255) DEFAULT NULL,
+  `Valeur` varchar(255) DEFAULT NULL,
+  --`creationDate` timestamp NULL DEFAULT NULL,
+  --`updationDate` timestamp NULL DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `category`
 --
 
-INSERT INTO `category` (`id`, `categoryName`, `categoryDescription`, `creationDate`, `updationDate`) VALUES
+INSERT INTO `category` (`id`, `Sensor Name`, `Valeur`) VALUES
 (1, 'Residencial ', 'Bunglows,Flats ', NULL, NULL),
 (2, 'Commercial', 'Offices,shops,', NULL, NULL),
 (13, 'book', 'this is book', NULL, NULL),

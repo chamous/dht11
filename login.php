@@ -25,7 +25,7 @@ if (isset($_POST['login'])) {
     $run=mysqli_query($con,$Query);
     if ($run) {
       $_SESSION['user']=$name;
-      $_SESSION['msg']="<a href='index.php' class='btn btn-primary btn-sm font-weight-bold col-2'><h5>Go Login</h5></a>";
+      $_SESSION['msg']="<a href='index.php' class='btn btn-primary btn-sm font-weight-bold col-2'><h5>Click here</h5></a>";
     }
     else{
       $_SESSION['msg']="Oh Snap ! Well done ,Again Try ";
@@ -37,7 +37,7 @@ if (isset($_POST['login'])) {
 <html lang="en">
 
 <head>
-    <title>Gradient Able bootstrap admin template by codedthemes </title>
+    <title>Sensor data manager by Heptatronics </title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

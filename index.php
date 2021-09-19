@@ -64,69 +64,39 @@ if (isset($_POST['create'])) {
 
                                             <div class="col-sm-12">
                                                 <div class="card shadow-lg">
-                                                  <div class="card-header bg-primary">
-                                                    <div class="title">
-                                                      <h5 class="text-white">Category :</h5>
-                                                    </div>
-                                                  </div>
                                                   <div class="card-body font-weight-bold">
-                                                      <form action="" method="post">
-                                                        <label for="">Category Name:</label>
                                                         <div class="form-group">
-                                                          <input type="text" name="name" class="form-control" placeholder="Enter the Category Name">
-                                                        </div>
-                                                         <label for="">Description :</label>
-                                                        <div class="form-group">
-                                                          <textarea name="desc" class="form-control" id="" cols="30" rows="10" placeholder="Enter Category Description"></textarea>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                          <button type="submit" name="create" value="create" class="btn btn-block btn-info btn-sm font-weight-bold">Submit</button>
+                                                          <button onclick='window.location.reload(true)' class="btn btn-block btn-info btn-sm font-weight-bold">Refresh</button>
                                                         </div>
                                                       </form>
 
                                                       <table class="table table-hover " id="mytable">
                                                         <thead>
                                                           <tr>
-                                                            <th>#</th>
-                                                            <th>Category Name</th>
-                                                            <th>Category Discription</th>
-                                                            <th>Update</th>
-                                                            <th>Delete</th>
+                                                            <th>ID</th>
+                                                            <th>Humidity</th>
+                                                            <th>Temperature</th>
+                                                            <th>Date</th>
                                                           </tr>
                                                         </thead>
                                                         <tbody>
                                                           <?php 
-                                                              $con=mysqli_connect('localhost','root','','north');
-                                                              $Query="SELECT * FROM category";
+                                                              $con=mysqli_connect('localhost','root','','temphumid');
+                                                              $Query="SELECT * FROM dht11";
                                                               $run=mysqli_query($con,$Query);
                                                               while ($row=mysqli_fetch_array($run)) {
                                                                 ?>
                                                                   <tr>
-                                                                    <td><?php echo $row['id'];?></td>
-                                                                    <td><?php echo $row['categoryName'];?></td>
+                                                                    <td><?php echo $row['ID'];?></td>
+                                                                    <td><?php echo $row['humidity'];?></td>
                                                                 <td>
-                                                                <?php echo $row['categoryDescription'];?></td>
-
-                                                                  <td>
-                                                                    <a href="update.php?id=<?php echo $row['id']?>" class="btn btn-sm btn-info">Update</a>
-                                                                  </td>
-                                                                  <td>
-                                                                    <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-sm btn-danger">Delete</a>
-                                                                  </td>
-                                                                  </tr>
+                                                                <?php echo $row['temperature'];?></td>
+                                                                <td><?php echo $row['date'];?></td>
                                                                 <?php
                                                               }
                                                           ?>
                                                         </tbody>
                                                         <tfoot>
-                                                         <tr>
-                                                            <th>#</th>
-                                                            <th>Category Name</th>
-                                                            <th>Category Discription</th>
-                                                            <th>Update</th>
-                                                            <th>Delete</th>
-                                                          </tr>
                                                         </tfoot>
                                                       </table>
                                                   </div>
@@ -138,60 +108,6 @@ if (isset($_POST['create'])) {
                                </div>
                             </div> 
                           </div>       
-                                            <!-- tabs card end -->
-
-                                            <!-- social statustic start -->
-                                           
-                                          
-                                            <!-- users visite and profile start -->
-                                          
-                                         
-
-        <!-- Warning Section Starts -->
-        <!-- Older IE warning message -->
-    <!--[if lt IE 9]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
-</div>
-<![endif]-->
-<!-- Warning Section Ends -->
-<!-- Required Jquery -->
 <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js"></script>
 <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>

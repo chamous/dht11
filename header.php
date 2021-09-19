@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>All Page</title>
+    <title>Manager</title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -79,17 +79,11 @@
                        <ul class="nav-right">
                            <li class="user-profile header-notification">
                                <a href="#!">
-                                <?php 
-                                 // $con=mysqli_connect('localhost','root','','north');
-                                  //$Query="SELECT image FROM login";
-                                  //$run=mysqli_query($con , $Query);
-                                  //while ($row=mysqli_fetch_array($run)) {
-                                  //  $image=$row['image'];
-                                 //?>
-                                 <img src="Image/<?php //echo htmlentities($image);?>" class="img-radius" width="80px" height="80" alt="">
-                                    <?php//  }
-                                //?>
-                                   <span><?php echo $_SESSION['user']; ?></span>
+
+                                 <img src="Image/admin.png"  class="img-radius" width="80px" height="80" alt="">
+
+ 
+                                    <?php echo $_SESSION['user']; ?>
                                    <i class="ti-angle-down"></i>
                                 
                                </a>
@@ -113,41 +107,26 @@
                         <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
                         <div class="pcoded-inner-navbar main-menu">
                             
-                            
-                            <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">
-                            Image &amp; ManageMent</div>
+                       
+                            <div class="pcoded-navigatio-lavel" ></span><h6 class="text-black">Sensors ManageMent</h6></li>
+                            </div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li>
                                     <a href="index.php">
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Create Project Category</span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Temp Sensor</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="insertproject.php">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Insert Project Details</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-
                             </ul>
 
                             <ul class="pcoded-item pcoded-left-item">
                                 <li>
-                                    <a href="review.php">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Add Review </span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="manageproject_detail.php">
+                                    <a href="update.php">
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">
 
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Manage Project Details </span>
+                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">ADD New Sensor</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
